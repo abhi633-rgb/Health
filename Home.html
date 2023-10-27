@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare</title>
+    <link rel="icon" type="image/x-icon" href="339881407.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="LogIn.css">
+    <link rel="stylesheet" href="wrapper.css">
+    <link rel="stylesheet" href="SignUp.css"> 
+</head>
+<body>
+    <header>
+        <h1 class="Health">Healthcare</h1>
+        <nav class="nav">
+                <a href="Home.html">Home</a>
+                <a href="services.html">About</a>
+                <a href="appointments.html">Sevices</a>
+                <a href="contact.html">Contact</a>
+                <button class="btnLogin-popup">LogIn</button>
+        </nav>
+    </header>
+ <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close-outline"></ion-icon></span>
+    <div class="form-box login">
+        <h1>Login</h1>
+        <form>  
+            <div class="input-box">
+                <input type="text" id="username"  placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+                <div class="input-box">
+                    <input type="password" id="password"  placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" required>Remember Me</label>
+                <a href="forgot_password.html">Forgot Password?</a>
+            </div>
+            <button class="btn" type="submit" onclick="verifyLogin(event)">Login</button>
+            <div class="register-link">
+                <p>Don't have an account?
+                    <a href="#" class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
+       <div class="form-box register">
+         <h1>Registration</h1>
+        <form action="Home.html" method="POST">
+            <div class="input-box">
+                <div class="input-field">
+                <input type="text" id="firstname" placeholder="First Name" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-field">
+                <input type="text" id="lastname" placeholder="Last Name" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            </div>
+
+
+            <div class="input-box">
+                <div class="input-field">
+                <input type="email" id="email" placeholder="Email" required>
+                <i class='bx bx-envelope bx-flip-horizontal' ></i>
+            </div>
+            <div class="input-field">
+                <input type="tel" id="mobile" placeholder="Mobile" pattern="[0-9]{10}" maxlength="10" required>
+                <i class='bx bxs-phone bx-flip-horizontal' ></i>
+            </div>
+            </div>
+
+
+            <div class="input-box">
+                <div class="input-field">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt bx-flip-horizontal' ></i>
+            </div>
+            <div class="input-field">
+                <input type="password" id="confirmPassword" placeholder="ConfirmPassword" required>
+                <i class='bx bxs-lock-alt bx-flip-horizontal' ></i>
+            </div>
+            </div>
+
+
+            <div class="input-box">
+                <div class="input-field">
+                <input type="tel" id="Adhar" placeholder="Adhar Number"pattern="[0-9]{10}" maxlength="12" required>
+                <i class='bx bxs-id-card'></i>
+            </div>
+                 <div class="input-field">
+                      <label>Gender</label>
+                      <select id="gender" placeholder="Gender" required>
+                      <option>Select</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                      </select>
+                </div>
+            </div>
+
+
+            <div class="remember-forgot">
+                <lable><input type="checkbox" required>I agree to the tearm & conditions</lable>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="login-register">
+                <p>Already have an account?<a href="#" class="login-link">LogIn</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+    <script src="Exchange.js"></script>
+    <script src="Verify.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
